@@ -1,0 +1,24 @@
+{
+  "name": "kaboo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --optimize-minimize --devtool source-map"
+  },
+  "author": "grugrut",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "file-loader": "^0.11.1",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "eslint": "^4.2.0",
+    "vue": "^2.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grugrut/beet-frontend.git"
+  },
+  "description": "beet front-end."
+}
