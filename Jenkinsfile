@@ -17,7 +17,7 @@ node {
 
     stage 'Deploy'
     withCredentials([string(credentialsId: 'DEPLOY_PATH', variable: 'DEPLOY_PATH')]) {
-      //sh 'rsync -vrlptD --delete ${WORKSPACE}/dist/ ${WINE_DEPLOY_PATH}/'
+      sh 'rsync -vrlptD --delete ${WORKSPACE}/dist/ ${DEPLOY_PATH}/'
     }
   } catch (e) {
     err_msg = "${e}"
