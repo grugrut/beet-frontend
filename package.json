@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --optimize-minimize --devtool source-map"
+    "build": "webpack --optimize-minimize --devtool source-map",
+    "lint": "eslint js/app.js"
   },
   "author": "grugrut",
   "license": "GPL-3.0",
