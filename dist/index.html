@@ -5,7 +5,10 @@
 </head>
 <body style="height:100%">
     <div id="app">
-        <input v-model="code">
+        <input v-model="code" autocomplete="on" list="codeList">
+        <datalist id="codeList">
+            <option v-for="code in codes" :value="code[0]" />
+        </datalist>
         <button v-on:click="graphNow">Graph!!</button>
     </div>
     <div id="canvas" style="width:100%; height:80%">
